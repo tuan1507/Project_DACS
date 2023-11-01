@@ -12,6 +12,13 @@ window.onscroll = () => {
         document.querySelector('.header .header-2').classList.remove('active');
     }
 }
+let loginFrom = document.querySelector('.login-form-container');
+document.querySelector('#login-btn').onclick = () => {
+  loginFrom.classList.toggle('active');
+}
+document.querySelector('#close-login-btn').onclick = () => {
+  loginFrom.classList.remove('active');
+}
 window.onload = () => {
     if (window.scrollY >80) {
         document.querySelector('.header .header-2').classList.add('active');
